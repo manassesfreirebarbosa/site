@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sercont Contabilidade | Resposta no Mesmo Dia, Sem Burocracia</title>
+
+  <meta name="description" content="Contador direto no WhatsApp com Marcos Henrique Barbosa (CRC 013128). Prazos fiscais em dia, migração sem burocracia e resposta em até 2h úteis.">
+
+  <!-- Open Graph (preview ao compartilhar no WhatsApp/Instagram) -->
+  <meta property="og:title" content="Sercont Contabilidade | Resposta no Mesmo Dia, Sem Burocracia">
+  <meta property="og:description" content="Contador direto no WhatsApp com Marcos Henrique Barbosa (CRC 013128). Prazos fiscais em dia, migração sem burocracia e resposta em até 2h úteis.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Sercont Contabilidade",
+    "email": "contabilidadesercont@yahoo.com.br",
+    "telephone": "+5577981421805",
+    "founder": {
+      "@type": "Person",
+      "name": "Marcos Henrique Barbosa",
+      "jobTitle": "Contador responsável - CRC 013128"
+    },
+    "sameAs": [
+      "https://instagram.com/sercont_contabilidade"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --azul: #233f91;
+      --escuro: #14245b;
+      --claro: #f4f7fc;
+      --texto: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, sans-serif;
+      color: var(--texto);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Poppins, sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: .3s;
+    }
+
+    header.ativo {
+      background: #ffffffee;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 10px 30px #0002;
+    }
+
+    nav {
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 170px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: var(--escuro);
+      font-weight: 600;
+    }
+
+    .menu-cta {
+      display: none;
+    }
+
+    /* HAMBÚRGUER (mobile) */
+    .hamburguer {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1100;
+    }
+
+    .hamburguer span {
+      width: 26px;
+      height: 3px;
+      background: var(--escuro);
+      border-radius: 3px;
+      transition: .3s;
+    }
+
+    .hamburguer.aberto span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.aberto span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburguer.aberto span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .btn {
+      background: var(--azul);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(120deg, #fff, #eef3ff);
+      padding-top: 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      line-height: 1.15;
+      color: var(--escuro);
+    }
+
+    .hero span {
+      color: var(--azul);
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.7;
+      margin: 25px 0;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .outline {
+      border: 2px solid var(--azul);
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: var(--azul);
+      font-weight: bold;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 30px 60px #0003;
+    }
+
+    @media(max-width:850px) {
+      .hamburguer {
+        display: flex;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 75%;
+        max-width: 320px;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        box-shadow: -10px 0 30px #0002;
+        transform: translateX(100%);
+        transition: .35s;
+      }
+
+      .menu.aberto {
+        transform: translateX(0);
+      }
+
+      .menu a {
+        font-size: 18px;
+      }
+
+      nav > a.btn {
+        display: none;
+      }
+
+      .menu-cta {
+        display: block;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+
+      <nav>
+
+        <a class="logo">
+
+          <img src="assets/logo-sercont.png" alt="Sercont Contabilidade">
+
+        </a>
+
+        <ul class="menu">
+
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#servicos">Serviços</a></li>
+
+          <li><a href="#diferenciais">Diferenciais</a></li>
+
+          <li><a href="#contato">Contato</a></li>
+
+          <li class="menu-cta">
+            <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento">
+              Solicitar orçamento
+            </a>
+          </li>
+
+        </ul>
+
+        <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento">
+
+          Solicitar orçamento
+
+        </a>
+
+        <button class="hamburguer" id="btnMenu" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <div>
+
+          <h1>
+
+            Contabilidade que responde no
+
+            <span>
+
+              mesmo dia
+
+            </span>
+
+            — sem burocracia
+
+          </h1>
+
+          <p>
+
+            Migre sua empresa para a Sercont e tenha contador direto no WhatsApp, prazos fiscais sempre em dia e zero letra miúda. Atendimento com Marcos Henrique Barbosa, CRC 013128.
+
+          </p>
+
+          <div class="hero-buttons">
+
+            <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20quero%20solicitar%20um%20orçamento">
+
+              Solicitar orçamento
+
+            </a>
+
+            <a class="outline" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20agendar%20uma%20consultoria">
+
+              Agendar consultoria
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-image">
+
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- =========================
+SERVIÇOS
+========================= -->
+
+  <section id="servicos" class="secao">
+
+    <div class="container">
+
+      <div class="titulo">
+
+        <h2>
+          Nossos Serviços
+        </h2>
+
+        <p>
+          Soluções completas para sua empresa nunca perder prazo, pagar multa ou ficar sem resposta.
+        </p>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <i class="fa-solid fa-calculator"></i>
+
+          <h3>
+            Contabilidade Mensal
+          </h3>
+
+          <p>
+            Organização contábil completa, relatórios e acompanhamento profissional.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Contabilidade%20Mensal">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-building"></i>
+
+          <h3>
+            Abertura de Empresa
+          </h3>
+
+          <p>
+            Abra sua empresa com segurança e tenha suporte em todas as etapas.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Abertura%20de%20Empresa">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+
+          <h3>
+            Serviços Fiscais
+          </h3>
+
+          <p>
+            Cuidamos das obrigações fiscais para sua empresa permanecer regular.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Serviços%20Fiscais">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-users"></i>
+
+          <h3>
+            Departamento Trabalhista
+          </h3>
+
+          <p>
+            Gestão de folha, funcionários e rotinas trabalhistas.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Departamento%20Trabalhista">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-chart-line"></i>
+
+          <h3>
+            Consultoria Empresarial
+          </h3>
+
+          <p>
+            Estratégias para melhorar resultados e decisões do negócio.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Consultoria%20Empresarial">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-money-bill-trend-up"></i>
+
+          <h3>
+            Planejamento Tributário
+          </h3>
+
+          <p>
+            Reduza custos através de estratégias tributárias inteligentes.
+          </p>
+
+          <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Planejamento%20Tributário">
+
+            Saiba mais
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+DIFERENCIAIS
+========================= -->
+
+  <section id="diferenciais" class="secao fundo">
+
+    <div class="container">
+
+      <div class="titulo">
+
+        <h2>
+          Por que escolher a Sercont?
+        </h2>
+
+        <p>
+          O que muda no dia a dia da sua empresa ao trabalhar com a Sercont.
+        </p>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <i class="fa-solid fa-handshake"></i>
+
+          <h3>
+            Contador direto no WhatsApp
+          </h3>
+
+          <p>
+            Fale direto com Marcos Henrique Barbosa (CRC 013128), sem passar por atendente ou fila de espera.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-laptop"></i>
+
+          <h3>
+            Tudo pelo celular
+          </h3>
+
+          <p>
+            Envio de documentos, notas e relatórios direto pelo WhatsApp — sem precisar ir até um escritório.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-shield-halved"></i>
+
+          <h3>
+            Zero multa por atraso
+          </h3>
+
+          <p>
+            Calendário fiscal acompanhado mês a mês para sua empresa nunca perder um prazo do Fisco.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-file-invoice"></i>
+
+          <h3>
+            Migração sem burocracia
+          </h3>
+
+          <p>
+            Trocamos de contabilidade por você — cuidamos de toda a transição com seu contador atual.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-bolt"></i>
+
+          <h3>
+            Resposta em até 2h úteis
+          </h3>
+
+          <p>
+            Dúvidas fiscais e financeiras respondidas no mesmo dia, sem esperar semanas.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-chart-pie"></i>
+
+          <h3>
+            Relatório mensal simplificado
+          </h3>
+
+          <p>
+            Você recebe um resumo em linguagem simples do que aconteceu financeiramente na sua empresa.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+COMO FUNCIONA
+========================= -->
+
+  <section class="secao">
+
+    <div class="container">
+
+      <div class="titulo">
+
+        <h2>
+          Como funciona
+        </h2>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card etapa">
+
+          <strong>
+            01
+          </strong>
+
+          <h3>
+            Diagnóstico
+          </h3>
+
+          <p>
+            Analisamos sua empresa e suas necessidades.
+          </p>
+
+        </div>
+
+        <div class="card etapa">
+
+          <strong>
+            02
+          </strong>
+
+          <h3>
+            Planejamento
+          </h3>
+
+          <p>
+            Criamos uma estratégia adequada.
+          </p>
+
+        </div>
+
+        <div class="card etapa">
+
+          <strong>
+            03
+          </strong>
+
+          <h3>
+            Implantação
+          </h3>
+
+          <p>
+            Organizamos todos os processos.
+          </p>
+
+        </div>
+
+        <div class="card etapa">
+
+          <strong>
+            04
+          </strong>
+
+          <h3>
+            Suporte Contínuo
+          </h3>
+
+          <p>
+            Acompanhamento constante.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+DEPOIMENTOS
+========================= -->
+
+  <section class="secao fundo">
+
+    <div class="container">
+
+      <div class="titulo">
+
+        <h2>
+          Clientes satisfeitos
+        </h2>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <h3>
+            ★★★★★
+          </h3>
+
+          <p>
+            "A Sercont trouxe organização e tranquilidade para nossa empresa."
+          </p>
+
+          <b>
+            Carlos - Empresário
+          </b>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            ★★★★★
+          </h3>
+
+          <p>
+            "Excelente atendimento e profissionais preparados."
+          </p>
+
+          <b>
+            Mariana - Comércio
+          </b>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            ★★★★★
+          </h3>
+
+          <p>
+            "Hoje conseguimos tomar decisões melhores."
+          </p>
+
+          <b>
+            João - Serviços
+          </b>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+CTA
+========================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Cansou de mandar mensagem pro contador e não ter resposta?
+      </h2>
+
+      <p>
+        Fale agora com Marcos Henrique Barbosa (CRC 013128) e receba um diagnóstico gratuito da sua situação fiscal.
+      </p>
+
+      <a class="btn branco" href="https://wa.me/5577981421805?text=Olá,%20quero%20solicitar%20um%20orçamento">
+
+        Solicitar orçamento
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <style>
+    .secao {
+      padding: 90px 0;
+    }
+
+    .fundo {
+      background: #f4f7fc;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .titulo h2 {
+      font-size: 38px;
+      color: #14245b;
+    }
+
+    .titulo p {
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px #0001;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card i {
+      font-size: 35px;
+      color: #233f91;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #14245b;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .etapa strong {
+      font-size: 55px;
+      color: #233f91;
+    }
+
+    .cta {
+      padding: 90px 0;
+      background: linear-gradient(120deg, #233f91, #14245b);
+      text-align: center;
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+    }
+
+    .cta p {
+      margin: 20px;
+    }
+
+    .branco {
+      background: white;
+      color: #233f91;
+    }
+
+    @media(max-width:850px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- =========================
+FORMULÁRIO
+========================= -->
+
+  <section id="contato" class="secao">
+
+    <div class="container">
+
+      <div class="titulo">
+
+        <h2>
+          Fale com um especialista
+        </h2>
+
+        <p>
+          Clique abaixo e fale direto com Marcos Henrique Barbosa pelo WhatsApp — resposta em até 2h úteis.
+        </p>
+
+      </div>
+
+      <div style="text-align:center;">
+
+        <a class="btn" href="https://wa.me/5577981421805?text=Olá,%20quero%20falar%20com%20um%20especialista">
+
+          <i class="fa-brands fa-whatsapp"></i>
+          Quero falar com um especialista
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+RODAPÉ
+========================= -->
+
+  <footer>
+
+    <div class="container footer-grid">
+
+      <div>
+
+        <img src="assets/logo-sercont.png" width="170">
+
+        <p>
+
+          Contabilidade inteligente para empresas que desejam crescer.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>
+          Links rápidos
+        </h3>
+
+        <a href="#">
+          Home
+        </a>
+
+        <a href="#servicos">
+          Serviços
+        </a>
+
+        <a href="#contato">
+          Contato
+        </a>
+
+      </div>
+
+      <div>
+
+        <h3>
+          Contato
+        </h3>
+
+        <p>
+          WhatsApp:
+          (77) 98142-1805
+        </p>
+
+        <p>
+          contabilidadesercont@yahoo.com.br
+        </p>
+
+        <p>
+          Instagram:
+          @sercont_contabilidade
+        </p>
+
+        <p>
+          CRC 013128 — Marcos Henrique Barbosa
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+
+      © 2026 Sercont Contabilidade - Todos os direitos reservados.
+
+    </div>
+
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+
+  <a class="whatsapp" target="_blank" href="https://wa.me/5577981421805?text=Olá,%20gostaria%20de%20falar%20com%20a%20Sercont">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+  </a>
+
+  <style>
+    /* FORM */
+    form {
+      max-width: 650px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      font-family: Inter;
+    }
+
+    form textarea {
+      height: 140px;
+      resize: none;
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #10182f;
+      color: white;
+      padding: 60px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .footer-grid img {
+      margin-bottom: 20px;
+    }
+
+    .footer-grid p {
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    .footer-grid a:hover {
+      color: white;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ffffff20;
+      color: #aaa;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      text-decoration: none;
+      z-index: 999;
+      box-shadow: 0 10px 30px #0004;
+      animation: pulsar 2s infinite;
+    }
+
+    @keyframes pulsar {
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @media(max-width:850px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    // =================
+    // NAVBAR BLUR
+    // =================
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("ativo");
+      } else {
+        header.classList.remove("ativo");
+      }
+    });
+    // =================
+    // MENU MOBILE (HAMBÚRGUER)
+    // =================
+    const btnMenu = document.getElementById("btnMenu");
+    const menu = document.querySelector(".menu");
+
+    function alternarMenu() {
+      const aberto = menu.classList.toggle("aberto");
+      btnMenu.classList.toggle("aberto", aberto);
+      btnMenu.setAttribute("aria-expanded", aberto);
+      document.body.style.overflow = aberto ? "hidden" : "";
+    }
+
+    btnMenu.addEventListener("click", alternarMenu);
+
+    // fecha o menu ao clicar em qualquer link
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (menu.classList.contains("aberto")) alternarMenu();
+      });
+    });
+    // =================
+    // ANIMAÇÕES
+    // =================
+    const elementosSercont =
+      document.querySelectorAll(
+        ".card,.titulo,.hero-grid"
+      );
+    const observerSercont =
+      new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add("mostrar");
+          }
+        });
+      });
+    elementosSercont.forEach((item) => {
+      item.classList.add("animar");
+      observerSercont.observe(item);
+    });
+  </script>
+
+  <style>
+    .animar {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: .8s;
+    }
+
+    .mostrar {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+</body>
+
+</html>
